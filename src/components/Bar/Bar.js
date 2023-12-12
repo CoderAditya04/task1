@@ -1,16 +1,19 @@
 import React from 'react';
-import './Bar.scss'; 
+import styles from './Bar.module.scss' 
+import classNames from 'classnames';
 
-const Bar = ({ label, height }) => {
-  const barStyle = {
-    height: `${height} px`,
-  };
+const Bar = ({ label, value }) => {
+
+  const classes = classNames(`${styles.barInner}`, {
+    [styles.zeroClass] : value === 0,
+    [styles.nonZeroClass] : value !== 0
+  });
 
   return (
-    <div className='bar'>
-      <div className='bar-label'>'₹ '+{height}</div>
-      <div className='bar-inner' style={barStyle}></div>
-      <div className='bar-label'>{label}</div>
+    <div className={styles.bar}>
+      <div className={styles.barLabel}>{` ₹${value}`}</div>
+      <div className={classes} style={{height: `${value*0.3+5}px`}}></div>
+      <div className={styles.barLabel}>{label}</div>
     </div>
   );
 };
