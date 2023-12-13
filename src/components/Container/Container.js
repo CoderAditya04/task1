@@ -40,7 +40,7 @@ const Container = () => {
   const tabs = ['6 Months', '1 Year', '3 Year'];
 
   return (
-    <div>
+    <div className={styles.boxChart}>
       <div className={styles.barChart}>
       {barParams.map((barData) => (
         <Bar key={barData.label} label={barData.label} value={barData.value} />

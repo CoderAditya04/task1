@@ -5,7 +5,10 @@ function App() {
     <div style={{height: '390px', width: '844px', display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: '100px'
+      margin: 'auto',
+      marginTop: '100px',
+      overflow: 'hidden',
+      position: 'relative'
       }}>
       <Container />
     </div>
