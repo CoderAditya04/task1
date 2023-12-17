@@ -1,4 +1,4 @@
-import BarChart from './components/BarChart'
+import BarChart from './components/BarChart';
 
 function App() {
 
