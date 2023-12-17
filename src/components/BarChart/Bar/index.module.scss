@@ -1,0 +1,36 @@
+.barLabel {
+  color: var(--Text-Dark---Medium-Emphasis, rgba(16, 16, 16, 0.54));
+  text-align: center;
+
+  /* Caption - Regular */
+  font-family: SF Pro Text;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 160% */
+  letter-spacing: -0.07px;
+  text-transform: uppercase;
+}
+
+.barOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+  flex: 1 0 0;
+}
+  
+.barInner {
+  width: 25px; 
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.zeroClass {
+  background-color: rgba(0, 184, 245, 0.20);
+}
+
+.nonZeroClass {
+  background-color: #00B8F5;
+}

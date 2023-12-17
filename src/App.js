@@ -1,17 +1,38 @@
-import Container from './components/Container/Container';
+import BarChart from './components/BarChart'
 
 function App() {
+
+  const values = [
+    {
+      label: "Jan",
+      value: 100
+    },
+    {
+      label: "Feb",
+      value: 0
+    },
+    {
+      label: "Mar",
+      value: 200
+    },
+    {
+      label: "Apr",
+      value: 500
+    },
+    {
+      label: "May",
+      value: 300
+    },
+    {
+      label: "Jun",
+      value: 600
+    },
+  ]
+
   return (
-    <div style={{height: '390px', width: '844px', display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      margin: 'auto',
-      marginTop: '100px',
-      overflow: 'hidden',
-      position: 'relative'
-      }}>
-      <Container />
-    </div>
+    <>
+      <BarChart values={values} title="Recent 6 months performance" />
+    </>
   );
 }
 
