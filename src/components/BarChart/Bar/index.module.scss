@@ -10,6 +10,7 @@
   line-height: 16px; /* 160% */
   letter-spacing: -0.07px;
   text-transform: uppercase;
+  margin-top: 6px;
 }
 
 .barOuter {
@@ -17,14 +18,14 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 2px;
   flex: 1 0 0;
 }
   
 .barInner {
+  max-height: 100px;
   width: 25px; 
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .zeroClass {

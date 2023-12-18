@@ -13,7 +13,7 @@ function App() {
     },
     {
       label: "Mar",
-      value: 200
+      value: 5000
     },
     {
       label: "Apr",
@@ -21,7 +21,7 @@ function App() {
     },
     {
       label: "May",
-      value: 300
+      value: 2000
     },
     {
       label: "Jun",

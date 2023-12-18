@@ -15,7 +15,7 @@ const Bar = ({ label, value }) => {
         <div className={styles.barLabel}>{` ₹${value}`}</div>
         <div className={classes} style={{height: `${value*0.1+5}px`}}></div>
       </div>
-      <div className={styles.barLabel} style={{ marginTop: '10px'}}>{label}</div>
+      <div className={styles.barLabel}>{label}</div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 .barChart {
-  display: flex; // inline-flex -> flex
-  height: 140px;
-  justify-content: space-between;  // center -> space-between
+  display: flex; 
+  justify-content: space-between;
   align-items: flex-end;
   padding: 5px;
 }
